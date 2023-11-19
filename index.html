@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Harshil Sharma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harshil Sharma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Harshil Sharma profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Harshil Sharma</h1>
+        <p class="section__text__p2">AI Cloud Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon-main"
+            onclick="window.open('https://www.linkedin.com/in/harshil-sharma-727a04202/', '_blank')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon-main"
+            onclick="window.open('https://github.com/xxender13', '_blank')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <div class="image">
+<img
+            src="./assets/Profile-pic2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+    <div class="back">
+      <p>As a cloud computing professional, I have gained hands-on AI/ML experience through internships at companies like Neem Consulting and Agniforge Industries. With expertise in Python, computer vision, and OpenCV, I have worked on deep learning datasets and voice recognition systems. Alongside my academic and professional pursuits, I have been a national level taekwondo champion and enjoy playing soccer.
+         I am excited to continuously enhance my AI skills and make meaningful contributions to cloud computing and AI initiatives..</p>
+    
+  </div></div>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container details-add-2">
+
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>1+ years <br />AI/ML Cloud Engineer</p>
+              <a>
+                <button
+                class="more-button"
+                onclick="window.location.href='Experience.html'"
+              >
+                More
+              </button>
+            </div>
+            
+            <div class="details-container details-add-2">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>B.Tech Bachelor of Technology<br />M.Sc. Masters Degree</p>
+              <a>
+                <button
+                class="more-button"
+                onclick="window.open('./assets/transcript.jpg', '_blank')"
+              >
+              Transcripts
+              </button>
+              </a>
+            </div>
+            
+          </div>
+         
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="education">
+      <p class="section__text__p1">Get To Know More</p>
+     
+      <h1 class="title">Education</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container details-add">
+            <h2 class="experience-sub-title">Academics</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Master's in Computer Science at Saint Louis University </h3>
+                  <p>Expected Graduation: 2025</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bachelor's in Computer Science Engineering from SRM Institute of Science and Technology, Chennai, India </h3>
+                  <p>Graduated 2023 with 9.32/10 CGPA</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>12th Grade: Bhai Parmanand Vidya Mandir, Delhi, India </h3>
+                  <p>Graduated 2019 with 82% Aggregate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>10th Grade: Vivekanand School, Delhi, India </h3>
+                  <p>Graduated 2017 with 7.6 CGPA Aggregate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Coursework</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Relevant coursework during bachelor's degree includes training in AWS Academy Cloud Foundation, Machine Learning, Database FoundationsRelevant coursework during bachelor's degree includes training in AWS Academy Cloud Foundation, Machine Learning, Database Foundations</h3>
+                <p></p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                <h3>Completed various online certifications in programming languages like C, PHP, Python and cloud platforms like AWS, Google Cloud</h3>
+                <p></p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Research paper published: "Automated Attendance System based on Facial Recognition using Adaboost Algorithm"</h3>
+                 <p></p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+  
+  
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title"  onclick="window.location.href='Experience.html'">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container details-add">
+            <h2 class="experience-sub-title">AI Software Developer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Azure</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS Lambda</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container details-add">
+            <h2 class="experience-sub-title">ML Cloud Engineer</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>IoT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>OpenCV</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container details-add-2">
+            <div class="article-container">
+              <img
+                src="./assets/Project1.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Virtual Classroom</h2>
+            <div class="btn-container">
+              <button onclick="window.open('https://github.com/xxender13/virtual-classroom', '_blank')" class="btn btn-color-2 project-btn">Github</button>
+
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/xxender13/virtual-classroom', '_blank')"
+              >
+                More Info
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container details-add-2">
+            <div class="article-container">
+              <img
+                src="./assets/Project2.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Automated attendance System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/xxender13/Automated-Attendance-System', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://ieeexplore.ieee.org/document/10046982', '_blank')"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container details-add-2">
+            <div class="article-container">
+              <img
+                src="./assets/Project3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Student Tracking System Using IoT</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/xxender13/Student-Tracking-System', '_blank')"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/xxender13/Student-Tracking-System/blob/main/IoT-based%20Student%20Tracking%20System%20in%20alliance%20with.pdf', '_blank')"
+              >
+                More Info
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:harshilsharma808@gmail.com">Email Me</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/harshil-sharma-727a04202/">LinkedIn</a></p>
+        </div>
+        <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='Contact.html'"
+      >
+        Send Query here
+      </button>
+      <button id="themeToggle" class="theme-switcher">
+        <i class="fas fa-moon">M</i>
+      </button>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Harshil Sharma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

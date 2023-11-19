@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">My Work</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harshil Sharma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="Experience.html" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="Contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="projects">
+      <p class="section__text__p1">Explore My Work</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers detail-add-3">
+          <div class="details-container color-container pro-add">
+            <div class="article-container ar2">
+              <img
+                src="./assets/InternShip2.jpg"
+                alt="Neem Consulting"
+                class="project-img"
+              />
+              <p></p>
+            </div>
+            <div class="mid-sec">
+              <h2 class="experience-sub-title project-title">
+                Agniforge Industry
+              </h2>
+              <p>
+                I worked as an AI Software Developer at Agniforge Industries,
+                gaining valuable experience in AI and ML. During my time there,
+                I actively contributed to various projects, including Voice
+                Recognition Systems and Object Detection using OpenCV. My role
+                involved working on computer vision applications, honing my
+                skills in AI and ML development
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='http://www.agniforge.com/'"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container pro-add">
+            <div class="article-container ar2">
+              <img
+                src="./assets/InternShip1.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <div class="mid-sec">
+              <h2 class="experience-sub-title project-title">
+                Neem Consulting
+              </h2>
+              <p>
+                After working at Agniforge Industries, I joined Neem Consulting
+                as a Technical Intern, expanding my expertise in Machine
+                Learning. During my time there, I worked on various ML concepts,
+                gaining hands-on experience in data handling and actively
+                contributing to AI projects. This allowed me to acquire
+                practical knowledge and skills in implementing ML algorithms and
+                data-driven solutions.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://weareneem.com/'"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="details-container color-container pro-add">
+            <div class="article-container ar2">
+              <img
+                src="./assets/InternShip3.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <div class="mid-sec">
+              <h2 class="experience-sub-title project-title">Med Tour Easy</h2>
+              <p>
+                During the AI training at MedTourEasy.The program not only
+                enhanced my understanding of how AI can be implemented at
+                different levels but also provided me with practical skills to
+                implement these concepts. The resources provided were
+                instrumental in strengthening my coding skills, allowing me to
+                apply theoretical knowledge in a hands-on manner. This training
+                has equipped me with a versatile skill set that I am eager to
+                leverage in real-world scenarios.
+              </p>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.medtoureasy.com/'"
+                >
+                  More Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="themeToggle" class="theme-switcher">
+          <i class="fas fa-moon">M</i>
+        </button>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Harshil Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      function toggleSlide() {
+        var slideContent = document.querySelector('.mid-sec p');
+        slideContent.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>

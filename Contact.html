@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Get In Touch</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Experience.html">Experience</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Harshil Sharma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Home</a></li>
+          <li>
+            <a href="Experience.html" onclick="toggleMenu()">Experience</a>
+          </li>
+          <li><a href="Contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailtoharshilsharma808@gmail.com"
+              >harshilsharma808@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/harshil-sharma-727a04202/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Form for submitting messages -->
+      <h1 class="title">Contact Me</h1>
+      <button id="themeToggle" class="theme-switcher">
+        <i class="fas fa-moon"></i>
+      </button>
+
+      <div class="contact-form">
+        <form action="https://formspree.io/f/myyqande" method="POST">
+          <label> Your email:</label>
+          <input type="email" name="email" required />
+
+          <label> Your message:</label>
+          <textarea name="message" required></textarea>
+
+          <!-- your other form fields go here -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <p>Or reach out directly:</p>
+        <p>Email: harshilsharma808@gmail.com</p>
+        <p><a href="tel:+1(314)3935686"> call US </a></p>
+      </div>
+      <button id="themeToggle2" class="theme-switcher">
+        <i class="fas fa-moon">M</i>
+      </button>
+    </section>
+
+    <!-- Your footer code -->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Experience.html">Experience</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Harshil Sharma. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
