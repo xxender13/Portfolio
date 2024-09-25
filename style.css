@@ -745,7 +745,7 @@ body.dark-theme {
   padding: 0 5%;
 }
 
-.mid-sec p {
+/* .mid-sec p {
   text-align: justify;
   box-sizing: border-box;
   opacity: 0;
@@ -757,7 +757,7 @@ body.dark-theme {
 .article-container:hover+.mid-sec p {
   opacity: 1;
   height: auto;
-}
+} */
 
 .details-container:hover .mid-sec p {
   opacity: 1;
