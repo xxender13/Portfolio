@@ -740,22 +740,20 @@ body.dark-theme {
   padding: 0 5%;
 }
 
-.mid-sec p {
-  text-align: justify;
-  box-sizing: border-box;
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 0.5s ease, height 0.5s ease;
-}
-
-.article-container:hover+.mid-sec p {
-  opacity: 1;
-  height: auto;
-}
 img.project-img{
   display: block;
   margin-left: auto;
   margin-right: auto;
 
+}
+.details-container:hover .mid-sec p {
+  opacity: 1;
+  height: auto;
+}
+
+.details-container .mid-sec p {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, height 0.5s ease;
 }
