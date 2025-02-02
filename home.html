@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+
+  <!-- Add React and ReactDOM libraries -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  
+  <!-- Add Babel for JSX transformation -->
+  <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+
+  <!-- Your Tailwind CSS link -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div id="about-root"></div>
+
+  <!-- React component script -->
+  <script type="text/babel">
+    const { useState } = React;
+
+    function About() {
+      const [isFlipped, setIsFlipped] = useState(false);
+
+      return (
+        <section id="about" className="bg-gray-100 p-10">
+          <p className="text-lg font-bold">Get To Know More</p>
+
+          <h2 className="text-3xl font-bold mt-3">About Me</h2>
+
+          <!-- Rest of your component code... -->
+
+          <img 
+            src="./assets/arrow.png"
+            className="w-10 h-10 mt-16 cursor-pointer"
+            alt="Arrow icon"
+            onClick={() => window.location.href='#experience'}  
+          />
+        </section>
+      );
+    }
+
+    // Render the About component
+    ReactDOM.render(
+      <About />,
+      document.getElementById('about-root')
+    );
+  </script>
+
+</body>
+</html>
